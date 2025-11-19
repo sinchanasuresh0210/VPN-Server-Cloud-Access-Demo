@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPN Details • VPN FOR SERVER FREE CLOUD ACCESS</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <div class="logo">VPN<span>CLOUD</span></div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+            <nav id="navMenu">
+                <a href="/">Home</a>
+                <a href="/vpn-details">VPN Details</a>
+                <a href="/">AI Mobile Model</a>
+                <a href="/">FAQ</a>
+                <a href="/login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section vpn-main">
+        <section class="vpn-header">
+            <h2>VPN details</h2>
+            <p class="vpn-subtitle">Your secure cloud VPN session is active.</p>
+            <div class="vpn-notice">Notification: VPN server started after login.</div>
+        </section>
+
+        <section class="vpn-grid">
+            <div class="card stats-card">
+                <h3>Usage & battery</h3>
+                <p class="stats-note">Approximate values for this session.</p>
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="stat-label">Data spending</span>
+                        <span class="stat-value">{{ data_spent_mb }} MB</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Battery impact</span>
+                        <span class="stat-value">{{ battery_impact }} %</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card stats-card">
+                <h3>Login activity</h3>
+                <p class="stats-note">Number of logins in this browser session.</p>
+                <div class="stat">
+                    <span class="stat-label">Times logged in</span>
+                    <span class="stat-value">{{ login_count }}</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> VPN FOR SERVER FREE CLOUD ACCESS. Demo site.</p>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
